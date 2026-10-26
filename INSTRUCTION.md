@@ -1,18 +1,14 @@
-# ToDo App - Docker Instructions
+# Django ToDo List Applikation	
+
 
 ## Docker Hub Repository
-You can find the official public image here:
-[Docker Hub - todoapp](https://hub.docker.com/r/zor1kk88/todoapp)
+- Repository Link: [https://hub.docker.com/r/zor1kk88/todoapp](https://hub.docker.com/r/zor1kk88/todoapp)
+- Image: 'zor1kk88/todoapp:1.0.0'
 
 ---
 
-## Prerequisites
-- Make sure [Docker Desktop](https://www.docker.com/) is installed and running on your machine.
 
----
-
-## How to Build and Run the Container
-
-### 1. Pull the image from Docker Hub
-```bash
-docker pull zor1kk88/todoapp:1.0.0
+## 1.How to Build the Docker Image
+To build the Docker image locally, run the following command in the root directory of the project:
+'''bash
+docker build --build-arg PYTHON_VERSION 3.11 -t zor1kk88/todoapp:1.0.0
